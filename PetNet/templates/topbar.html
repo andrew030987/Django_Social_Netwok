@@ -19,7 +19,9 @@
 					<div class="col-lg-2 col-sm-3">
 						<div class="user-avatar">
 							<figure>
+								{% if user.avatar%}
 								<img src="{{user.avatar.url}}" alt="">
+								{%endif%}
 								<form class="edit-phto">
 									<i class="fa fa-camera-retro"></i>
 									<label class="fileContainer">
