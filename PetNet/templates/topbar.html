@@ -21,7 +21,10 @@
 							<figure>
 								{% if user.avatar%}
 								<img src="{{user.avatar.url}}" alt="">
+								{%else%}
+								<img src="{% static 'images/resources/timeline-1.jpg' %}" alt="">
 								{%endif%}
+
 								<form class="edit-phto">
 									<i class="fa fa-camera-retro"></i>
 									<label class="fileContainer">
